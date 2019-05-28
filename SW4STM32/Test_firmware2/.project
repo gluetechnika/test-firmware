@@ -21,6 +21,11 @@
 	<natures>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
@@ -86,6 +91,11 @@
 			<name>Application/User/stm32f4xx_hal_msp.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f4xx_hal_msp.c</locationURI>
+		</link>
+		<link>
+			<name>Application/User/stm32f4xx_hal_timebase_tim.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Src/stm32f4xx_hal_timebase_tim.c</locationURI>
 		</link>
 		<link>
 			<name>Application/User/stm32f4xx_it.c</name>
@@ -303,11 +313,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Drivers/BSP/Components/exc7200/exc7200.c</locationURI>
 		</link>
 		<link>
-			<name>Drivers/BSP/Components/ili9341.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Drivers/BSP/Components/ili9341/ili9341.c</locationURI>
-		</link>
-		<link>
 			<name>Drivers/BSP/Components/stmpe811.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Drivers/BSP/Components/stmpe811/stmpe811.c</locationURI>
@@ -376,6 +381,11 @@
 			<name>Application/User/TouchGFX/generated/images/BitmapDatabase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/BitmapDatabase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/generated/texts/LanguageGb.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/texts/src/LanguageGb.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/TouchGFX/generated/texts/Texts.cpp</name>

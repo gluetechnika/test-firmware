@@ -92,7 +92,6 @@ static FMC_SDRAM_CommandTypeDef Command;
 void MX_LCD_Init(void) 
 { 
  LTDC_LayerCfgTypeDef pLayerCfg;
- ili9341_Init();
 
 /* De-Initialize LTDC */
   HAL_LTDC_DeInit(&hltdc);
@@ -119,8 +118,8 @@ void MX_LCD_Init(void)
     Error_Handler( );
   }
 
-  pLayerCfg.WindowX0 = 12;
-  pLayerCfg.WindowX1 = 1012;
+  pLayerCfg.WindowX0 = 0;
+  pLayerCfg.WindowX1 = 1024;
   pLayerCfg.WindowY0 = 0;
   pLayerCfg.WindowY1 = 600;
   pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB565;
@@ -129,7 +128,7 @@ void MX_LCD_Init(void)
   pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
   pLayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_CA;
   pLayerCfg.FBStartAdress = 0xD0000800;
-  pLayerCfg.ImageWidth = 1000;
+  pLayerCfg.ImageWidth = 1024;
   pLayerCfg.ImageHeight = 600;
   pLayerCfg.Backcolor.Blue = 31;
   pLayerCfg.Backcolor.Green = 31;

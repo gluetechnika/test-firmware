@@ -35,7 +35,7 @@
                 </outputEntries>
               </builder>
               <tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.991502725" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
-                <option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.328195441" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.debug" valueType="enumerated"/>
+                <option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.328195441" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.none" valueType="enumerated"/>
                 <option id="gnu.c.compiler.option.debugging.level.284528858" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                 <option id="gnu.c.compiler.option.include.paths.1993360601" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                   <listOptionValue builtIn="false" value="../../../Inc"/>
@@ -54,7 +54,6 @@
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/exc7200"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/stmpe811"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ts3510"/>
-                  <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ili9341"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ampire480272"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/Common"/>
@@ -91,7 +90,6 @@
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/exc7200"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/stmpe811"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ts3510"/>
-                  <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ili9341"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ampire480272"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/Common"/>
@@ -205,7 +203,6 @@
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/exc7200"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/stmpe811"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ts3510"/>
-                  <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ili9341"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ampire480272"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/Common"/>
@@ -218,7 +215,7 @@
                   <listOptionValue builtIn="false" value="STM32F429xx"/>
                   <listOptionValue builtIn="false" value="USE_BPP=16"/>
                 </option>
-                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.1138959425" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" value="-fmessage-length=0" valueType="string"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.1138959425" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-fmessage-length=0" valueType="string"/>
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1653074722" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.895821177" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
               </tool>
@@ -242,7 +239,6 @@
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/exc7200"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/stmpe811"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ts3510"/>
-                  <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ili9341"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/ampire480272"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
                   <listOptionValue builtIn="false" value="../../../Drivers/BSP/Components/Common"/>
@@ -255,7 +251,7 @@
                   <listOptionValue builtIn="false" value="STM32F429xx"/>
                   <listOptionValue builtIn="false" value="USE_BPP=16"/>
                 </option>
-                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.1036122978" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" value="-fmessage-length=0" valueType="string"/>
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.1036122978" name="Other flags" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-fmessage-length=0" valueType="string"/>
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1663941431" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1015369837" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
               </tool>
@@ -267,8 +263,8 @@
                 <option id="gnu.c.link.option.paths.1011997816" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                   <listOptionValue builtIn="false" value="../../../Middlewares/ST/TouchGFX/touchgfx/lib/core/cortex_m4f/gcc"/>
                 </option>
-                <option id="gnu.c.link.option.ldflags.356202505" superClass="gnu.c.link.option.ldflags" value="-specs=nosys.specs -specs=nano.specs" valueType="string"/>
-                <option id="gnu.c.link.option.other.1528089496" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" useByScannerDiscovery="false" valueType="stringList"/>
+                <option id="gnu.c.link.option.ldflags.356202505" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-specs=nosys.specs -specs=nano.specs" valueType="string"/>
+                <option id="gnu.c.link.option.other.1528089496" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" useByScannerDiscovery="false"/>
                 <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1063427845" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
                   <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
                   <additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -283,7 +279,7 @@
                   <listOptionValue builtIn="false" value="../../../Middlewares/ST/TouchGFX/touchgfx/lib/core/cortex_m4f/gcc"/>
                 </option>
                 <option id="gnu.cpp.link.option.ldflags.389263190" superClass="gnu.cpp.link.option.ldflags" value="-specs=nosys.specs -specs=nano.specs" valueType="string"/>
-                <option id="gnu.cpp.link.option.other.462216856" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" useByScannerDiscovery="false" valueType="stringList"/>
+                <option id="gnu.cpp.link.option.other.462216856" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" useByScannerDiscovery="false"/>
                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1564258366" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                   <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
                   <additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -291,15 +287,14 @@
               </tool>
               <tool id="fr.ac6.managedbuild.tool.gnu.archiver.1425140630" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
               <tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.106750593" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
-                <option id="gnu.both.asm.option.include.paths.1915112739" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
-								</option>
+                <option id="gnu.both.asm.option.include.paths.1915112739" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
                 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.344994597" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.66666748" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
               </tool>
             </toolChain>
           </folderInfo>
           <sourceEntries>
-            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
           </sourceEntries>
         </configuration>
       </storageModule>

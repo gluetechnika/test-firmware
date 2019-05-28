@@ -61,60 +61,6 @@ extern "C"
 static uint32_t frameBuf0 = (uint32_t)(0xd0000800);
 extern "C" {
 
-/**
-  * @brief  Configures the LCD_SPI interface.
-  */
-__weak void LCD_IO_Init(void)
-{
-   /* USER CODE BEGIN LCD_IO_Init */
-
-   /* USER CODE END LCD_IO_Init */
-}
-
-/**
-  * @brief  Writes register address.
-  */
-__weak void LCD_IO_WriteReg(uint8_t Reg) 
-{
-   /* USER CODE BEGIN LCD_IO_WriteReg */
-
-   /* USER CODE END LCD_IO_WriteReg */
-}
-/**
-  * @brief  Writes register value.
-  */
-
-__weak void LCD_IO_WriteData(uint16_t RegValue) 
-{
-   /* USER CODE BEGIN LCD_IO_WriteData */
-
-   /* USER CODE END LCD_IO_WriteData */
-}
-
-/**
-  * @brief  Reads register value.
-  * @param  RegValue Address of the register to read
-  * @param  ReadSize Number of bytes to read
-  * @retval Content of the register value
-  */
-
-__weak uint32_t LCD_IO_ReadData(uint16_t RegValue, uint8_t ReadSize) 
-{
-   /* USER CODE BEGIN LCD_IO_ReadData */
-
-   /* USER CODE END LCD_IO_ReadData */
-  
-  return 0;
-}
-/**
-  * @brief  Wait for loop in ms.
-  * @param  Delay in ms.
-  */
-void LCD_Delay(uint32_t Delay)
-{
-  HAL_Delay(Delay);
-}
-
 uint32_t LCD_GetXSize(void)
 {
   return 1024;

@@ -1,7 +1,7 @@
 #include <STM32F4TouchController.hpp>
 
 /* USER CODE BEGIN BSP user includes */
-
+#include "TT_FT5206.h"
 /* USER CODE END BSP user includes */
 
 extern "C"
