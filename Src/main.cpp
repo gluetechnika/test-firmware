@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "TT_FT5206.h"
+#include <touchgfx/hal/OSWrappers.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +50,7 @@ DAC_HandleTypeDef hdac;
 
 ETH_HandleTypeDef heth;
 
-I2C_HandleTypeDef hi2c2;
+//I2C_HandleTypeDef hi2c2;
 
 SPI_HandleTypeDef hspi2;
 SPI_HandleTypeDef hspi4;
@@ -779,7 +780,36 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//{
+//	if(GPIO_Pin == CTP_INT_Pin)
+//	{
+//	    //HAL_NVIC_DisableIRQ(EXTI3_IRQn);
+//
+//	    HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+//	    //TT_FT5206_EXTI_Callback();
+//	    //HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+//	    //HAL_NVIC_ClearPendingIRQ(EXTI3_IRQn);
+//
+//    //entering active area
+//    HAL_LTDC_ProgramLineEvent(hltdc, lcd_int_porch_line);
+//    HAL::getInstance()->vSync();
+//    OSWrappers::signalVSync();
+//    // Swap frame buffers immediately instead of waiting for the task to be scheduled in.
+//    // Note: task will also swap when it wakes up, but that operation is guarded and will not have
+//    // any effect if already swapped.
+//    HAL::getInstance()->swapFrameBuffers();
+//    GPIO::set(GPIO::VSYNC_FREQ);
+//}
+//else
+//{
+//    //exiting active area
+//    HAL_LTDC_ProgramLineEvent(hltdc, lcd_int_active_line);
+//    GPIO::clear(GPIO::VSYNC_FREQ);
+//    HAL::getInstance()->frontPorchEntered();
+//}
 
+//}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -792,15 +822,14 @@ static void MX_GPIO_Init(void)
 void StartDefaultTask(void const * argument)
 {
 
-/* Graphic application */
+/* Graphic application */  
   GRAPHICS_MainTask();
 
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)
   {
-    HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-    osDelay(100);
+    osDelay(1);
   }
   /* USER CODE END 5 */ 
 }
@@ -818,8 +847,8 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-      HAL_GPIO_TogglePin(LED4_GPIO_Port, LED4_Pin);
-      osDelay(500);
+    osDelay(400);
+    //HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
   }
   /* USER CODE END StartTask02 */
 }

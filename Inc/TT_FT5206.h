@@ -9,8 +9,22 @@
 #define TT_FT5206_H_
 
 #include "stm32f4xx_hal.h"
-#include "i2c.h"
+//#include "i2c.h"
+extern I2C_HandleTypeDef hi2c2;
+typedef struct
+{
+  uint16_t TouchDetected;
+  uint16_t X;
+  uint16_t Y;
+  uint16_t Z;
+}TS_StateTypeDef;
 
+enum FT5206_ERROR{
+  OK = 0,
+  CHIP_REGISTER_WRITING_ERROR = 0x03,
+  CHIP_START_FAIL = 0x05,
+  NO_MATCH_ERROR = 0x1A
+};
 #define TP_I2C hi2c2
 #define FT5206_REGISTER_DEVICE_MODE 	(0x00)
 #define FT5206_REGISTER_GEST_ID 		(0x01)
@@ -59,17 +73,19 @@
 #define FT5206_RESET_PIN		(GPIO_PIN_7)
 #define FT5206_RESET_CLK_ENABLE	(__GPIOB_CLK_ENABLE())
 
+#ifdef  __cplusplus
+extern "C"
+{
+#endif
+
 void TT_FT5206_init(void);
 void TT_FT5206_EXTI_Callback(void);
-void TT_FT5206_get_point(uint16_t* x, uint16_t* y);
+void TT_FT5206_get_point(TS_StateTypeDef * state);
 uint8_t TT_FT5206_get_touch_nbr(void);
 
 enum FT5206_ERROR TT_FT5206_get_error(void);
 
-enum FT5206_ERROR{
-  OK = 0,
-  CHIP_REGISTER_WRITING_ERROR = 0x03,
-  CHIP_START_FAIL = 0x05,
-  NO_MATCH_ERROR = 0x1A
-};
+#ifdef  __cplusplus
+}
+#endif
 #endif /* TT_FT5206_H_ */

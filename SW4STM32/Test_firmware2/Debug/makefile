@@ -13,12 +13,14 @@ RM := rm -rf
 -include Drivers/STM32F4xx_HAL_Driver/subdir.mk
 -include Drivers/CMSIS/subdir.mk
 -include Drivers/BSP/Components/subdir.mk
+-include Application/User/TouchGFX/gui/screen2_screen/subdir.mk
 -include Application/User/TouchGFX/gui/screen1_screen/subdir.mk
 -include Application/User/TouchGFX/gui/model/subdir.mk
 -include Application/User/TouchGFX/gui/common/subdir.mk
 -include Application/User/TouchGFX/generated/texts/subdir.mk
 -include Application/User/TouchGFX/generated/images/__designer/subdir.mk
 -include Application/User/TouchGFX/generated/images/subdir.mk
+-include Application/User/TouchGFX/generated/gui_generated/screen2_screen/subdir.mk
 -include Application/User/TouchGFX/generated/gui_generated/screen1_screen/subdir.mk
 -include Application/User/TouchGFX/generated/gui_generated/common/subdir.mk
 -include Application/User/TouchGFX/generated/fonts/subdir.mk
@@ -62,7 +64,7 @@ all: Test_firmware2.elf
 Test_firmware2.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU G++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"E:\Workspace\Embedded\Gluetechnika\Controler_v2\Test_firmware2\Middlewares\ST\TouchGFX\touchgfx\lib\core\cortex_m4f\gcc"  -specs=nosys.specs -specs=nano.specs -T"../STM32F429IITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "Test_firmware2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"D:\Dokumenty\STM32\Test_firmware2\Middlewares\ST\TouchGFX\touchgfx\lib\core\cortex_m4f\gcc"  -specs=nosys.specs -specs=nano.specs -T"../STM32F429IITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "Test_firmware2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

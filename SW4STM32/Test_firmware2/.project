@@ -26,6 +26,9 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
@@ -383,6 +386,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/BitmapDatabase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/generated/images/download.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/download.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/texts/LanguageGb.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/texts/src/LanguageGb.cpp</locationURI>
@@ -418,6 +426,16 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/gui/src/screen1_screen/Screen1View.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/gui/screen2_screen/Screen2Presenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/gui/screen2_screen/Screen2View.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/gui/src/screen2_screen/Screen2View.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/gui_generated/common/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
@@ -428,6 +446,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/TouchGFX/generated/gui_generated/screen2_screen/Screen2ViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/TouchGFX/generated/images/__designer/blue_buttons_round_edge_small.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_buttons_round_edge_small.cpp</locationURI>
@@ -436,6 +459,26 @@
 			<name>Application/User/TouchGFX/generated/images/__designer/blue_buttons_round_edge_small_pressed.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_buttons_round_edge_small_pressed.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/generated/images/__designer/blue_progressindicators_bg_medium_text_progress_bg_square.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_progressindicators_bg_medium_text_progress_bg_square.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/generated/images/__designer/blue_slider_horizontal_large_indicators_slider_round_nob.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_slider_horizontal_large_indicators_slider_round_nob.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/generated/images/__designer/blue_slider_horizontal_large_slider_round_back.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_slider_horizontal_large_slider_round_back.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/TouchGFX/generated/images/__designer/blue_slider_horizontal_large_slider_round_fill.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_slider_horizontal_large_slider_round_fill.cpp</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

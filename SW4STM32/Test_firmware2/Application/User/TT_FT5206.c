@@ -5,11 +5,12 @@
  *      Author: Tomasz
  */
 #include "TT_FT5206.h"
-#include "gpio.h"
-#include "i2c.h"
-
+#include "main.h"
+//#include "gpio.h"
+//#include "i2c.h"
+I2C_HandleTypeDef hi2c2;
 uint16_t x_cor, y_cor;
-volatile GUI_PID_STATE touch;
+volatile TS_StateTypeDef touch;
 volatile uint8_t nbr;
 uint8_t TT_FT5206_read_register(uint8_t adress)
 {
@@ -49,9 +50,9 @@ void TT_FT5206_init(void)
 }
 void TT_FT5206_EXTI_Callback(void)
 {
-	TT_FT5206_get_point(&x_cor, &y_cor);
+	//TT_FT5206_get_point(&x_cor, &y_cor);
 }
-void TT_FT5206_get_point(uint16_t* x, uint16_t* y)
+void TT_FT5206_get_point(TS_StateTypeDef * state)
 {
 	//nbr = TT_FT5206_get_touch_nbr();
 	uint8_t storage[4] = {FT5206_REGISTER_TOUCH1_XH};
@@ -66,24 +67,22 @@ void TT_FT5206_get_point(uint16_t* x, uint16_t* y)
 	  }
 	if((storage[0] & 0xC0) == 0)
 	{
-		touch.x = (((storage[0] & 0x0F) << 8) | storage[1]);
-		touch.y = 600 - (((storage[2] & 0x0F) << 8) | storage[3]);
-		touch.Layer = 0;
-		touch.Pressed = 1;
-		GUI_TOUCH_StoreStateEx(&touch);
+		state->X = (((storage[0] & 0x0F) << 8) | storage[1]);
+		state->Y = 600 - (((storage[2] & 0x0F) << 8) | storage[3]);
+		//touch.Layer = 0;
+		state->TouchDetected = 1;
 		HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
 
 
 	}
 	else if((storage[0] & 0xC0) == 0x80)
 	{
-		touch.x = -1;
-		touch.y = -1;
+//	    state->X = -1;
+//	    state->Y = -1;
 		HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-		touch.Layer = 0;
-		touch.Pressed = 0;
-		GUI_TOUCH_StoreStateEx(&touch);
+		state->TouchDetected = 0;
 	}
+
 }
 enum FT5206_ERROR TT_FT5206_get_error(void)
 {
