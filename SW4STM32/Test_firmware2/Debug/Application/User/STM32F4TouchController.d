@@ -45,7 +45,8 @@ Application/User/STM32F4TouchController.o: \
  D:/Dokumenty/STM32/Test_firmware2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  D:/Dokumenty/STM32/Test_firmware2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  D:/Dokumenty/STM32/Test_firmware2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/Dokumenty/STM32/Test_firmware2/Inc/TT_FT5206.h
+ D:/Dokumenty/STM32/Test_firmware2/Inc/TT_FT5206.h \
+ D:/Dokumenty/STM32/Test_firmware2/Inc/printf.h
 
 D:/Dokumenty/STM32/Test_firmware2/Src/STM32F4TouchController.hpp:
 
@@ -138,3 +139,5 @@ D:/Dokumenty/STM32/Test_firmware2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal
 D:/Dokumenty/STM32/Test_firmware2/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 
 D:/Dokumenty/STM32/Test_firmware2/Inc/TT_FT5206.h:
+
+D:/Dokumenty/STM32/Test_firmware2/Inc/printf.h:

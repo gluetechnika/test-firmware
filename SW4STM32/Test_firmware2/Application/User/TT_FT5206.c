@@ -6,6 +6,7 @@
  */
 #include "TT_FT5206.h"
 #include "main.h"
+#include "printf.h"
 //#include "gpio.h"
 //#include "i2c.h"
 I2C_HandleTypeDef hi2c2;
@@ -65,17 +66,19 @@ void TT_FT5206_get_point(TS_StateTypeDef * state)
 	  {
 	    tp_error = HAL_I2C_GetError(&TP_I2C);
 	  }
-	if((storage[0] & 0xC0) == 0)
+	state->X = (((storage[0] & 0x0F) << 8) | storage[1]);
+	state->Y = 600 - (((storage[2] & 0x0F) << 8) | storage[3]);
+	if(storage[0] & 0x80)
 	{
-		state->X = (((storage[0] & 0x0F) << 8) | storage[1]);
-		state->Y = 600 - (((storage[2] & 0x0F) << 8) | storage[3]);
+
 		//touch.Layer = 0;
 		state->TouchDetected = 1;
+
 		HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
 
 
 	}
-	else if((storage[0] & 0xC0) == 0x80)
+	else if(storage[0] & 0x40)
 	{
 //	    state->X = -1;
 //	    state->Y = -1;

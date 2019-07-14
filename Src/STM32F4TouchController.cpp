@@ -2,6 +2,7 @@
 
 /* USER CODE BEGIN BSP user includes */
 #include "TT_FT5206.h"
+#include "printf.h"
 /* USER CODE END BSP user includes */
 
 extern "C"
@@ -40,8 +41,12 @@ bool STM32F4TouchController::sampleTouch(int32_t& x, int32_t& y)
   TT_FT5206_get_point(&state);
   if (state.TouchDetected)
   {
+
+//	  x = 210;
+//	  y = 410;
       x = state.X;
       y = state.Y;
+
       state.TouchDetected = 0;
       return true;
   }

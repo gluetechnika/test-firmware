@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/containers/Slider.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -30,6 +31,7 @@ protected:
     touchgfx::ScalableImage scalableImage1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::Slider slider1;
+    touchgfx::Button button1;
 
 private:
 

@@ -7,6 +7,7 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/containers/progress_indicators/TextProgress.hpp>
 
@@ -26,6 +27,7 @@ protected:
     /*
      * Member Declarations
      */
+    touchgfx::ScalableImage scalableImage1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::TextProgress textProgress1;
 

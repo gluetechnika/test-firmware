@@ -30,9 +30,9 @@
               "Blue": 255
             },
             "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 217,
+              "Green": 22,
+              "Blue": 22
             },
             "TextRotation": "0",
             "Style": "Style4",
@@ -73,6 +73,23 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button1",
+            "X": 210,
+            "Y": 410,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -97,6 +114,22 @@
       {
         "Components": [
           {
+            "Filename": "imageonline-co-darkenimage.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage1",
+            "X": 0,
+            "Y": 0,
+            "Width": 1024,
+            "Height": 1534,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
             "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
             "Released": "__designer\\blue_buttons_round_edge_small.png",
             "Alpha": 255,
@@ -114,8 +147,8 @@
             "TextRotation": "0",
             "Style": "Style4",
             "Name": "buttonWithLabel1",
-            "X": 427,
-            "Y": 166,
+            "X": 190,
+            "Y": 155,
             "Width": 170,
             "Height": 60,
             "Type": "ButtonWithLabel",
@@ -146,8 +179,8 @@
             "ProgressRangeStepsMin": 0,
             "ProgressInitialValue": 60,
             "Name": "textProgress1",
-            "X": 470,
-            "Y": 283,
+            "X": 233,
+            "Y": 310,
             "Width": 84,
             "Height": 34,
             "Type": "TextProgress",

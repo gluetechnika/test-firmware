@@ -9,14 +9,18 @@
 Screen2ViewBase::Screen2ViewBase() :
     buttonCallback(this, &Screen2ViewBase::buttonCallbackHandler)
 {
-    buttonWithLabel1.setXY(427, 166);
+    scalableImage1.setBitmap(Bitmap(BITMAP_IMAGEONLINE_CO_DARKENIMAGE_ID));
+    scalableImage1.setPosition(0, 0, 1024, 1534);
+    scalableImage1.setScalingAlgorithm(ScalableImage::NEAREST_NEIGHBOR);
+
+    buttonWithLabel1.setXY(190, 155);
     buttonWithLabel1.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
     buttonWithLabel1.setLabelText(TypedText(T_SINGLEUSEID2));
     buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(92, 82, 82));
     buttonWithLabel1.setAction(buttonCallback);
 
-    textProgress1.setXY(470, 283);
+    textProgress1.setXY(233, 310);
     textProgress1.setProgressIndicatorPosition(0, 0, 84, 34);
     textProgress1.setRange(0, 100);
     textProgress1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
@@ -25,6 +29,7 @@ Screen2ViewBase::Screen2ViewBase() :
     textProgress1.setBackground(Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_TEXT_PROGRESS_BG_SQUARE_ID));
     textProgress1.setValue(60);
 
+    add(scalableImage1);
     add(buttonWithLabel1);
     add(textProgress1);
 }

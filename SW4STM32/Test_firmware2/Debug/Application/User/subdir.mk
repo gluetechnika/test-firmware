@@ -6,6 +6,7 @@
 C_SRCS += \
 ../Application/User/TT_FT5206.c \
 D:/Dokumenty/STM32/Test_firmware2/Src/freertos.c \
+../Application/User/printf.c \
 D:/Dokumenty/STM32/Test_firmware2/Src/stm32f4xx_hal_msp.c \
 D:/Dokumenty/STM32/Test_firmware2/Src/stm32f4xx_hal_timebase_tim.c \
 D:/Dokumenty/STM32/Test_firmware2/Src/stm32f4xx_it.c 
@@ -31,6 +32,7 @@ OBJS += \
 ./Application/User/TT_FT5206.o \
 ./Application/User/freertos.o \
 ./Application/User/main.o \
+./Application/User/printf.o \
 ./Application/User/stm32f4xx_hal_msp.o \
 ./Application/User/stm32f4xx_hal_timebase_tim.o \
 ./Application/User/stm32f4xx_it.o 
@@ -38,6 +40,7 @@ OBJS += \
 C_DEPS += \
 ./Application/User/TT_FT5206.d \
 ./Application/User/freertos.d \
+./Application/User/printf.d \
 ./Application/User/stm32f4xx_hal_msp.d \
 ./Application/User/stm32f4xx_hal_timebase_tim.d \
 ./Application/User/stm32f4xx_it.d 
