@@ -102,16 +102,16 @@ void MX_LCD_Init(void)
   hltdc.Init.VSPolarity = LTDC_VSPOLARITY_AL;
   hltdc.Init.DEPolarity = LTDC_DEPOLARITY_AL;
   hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
-  hltdc.Init.HorizontalSync = 47;
-  hltdc.Init.VerticalSync = 2;
-  hltdc.Init.AccumulatedHBP = 135;
-  hltdc.Init.AccumulatedVBP = 34;
-  hltdc.Init.AccumulatedActiveW = 1159;
-  hltdc.Init.AccumulatedActiveH = 634;
-  hltdc.Init.TotalWidth = 1199;
-  hltdc.Init.TotalHeigh = 647;
+  hltdc.Init.HorizontalSync = 50;
+  hltdc.Init.VerticalSync = 3;
+  hltdc.Init.AccumulatedHBP = 162;
+  hltdc.Init.AccumulatedVBP = 42;
+  hltdc.Init.AccumulatedActiveW = 1186;
+  hltdc.Init.AccumulatedActiveH = 642;
+  hltdc.Init.TotalWidth = 1237;
+  hltdc.Init.TotalHeigh = 658;
   hltdc.Init.Backcolor.Blue = 0;
-  hltdc.Init.Backcolor.Green = 100;
+  hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
   if (HAL_LTDC_Init(&hltdc) != HAL_OK)
   {

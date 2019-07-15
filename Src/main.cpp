@@ -50,7 +50,7 @@ DAC_HandleTypeDef hdac;
 
 ETH_HandleTypeDef heth;
 
-//I2C_HandleTypeDef hi2c2;
+I2C_HandleTypeDef hi2c2;
 
 SPI_HandleTypeDef hspi2;
 SPI_HandleTypeDef hspi4;
