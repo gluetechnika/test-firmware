@@ -16,12 +16,14 @@ RM := rm -rf
 -include Application/User/TouchGFX/gui/screen2_screen/subdir.mk
 -include Application/User/TouchGFX/gui/screen1_screen/subdir.mk
 -include Application/User/TouchGFX/gui/model/subdir.mk
+-include Application/User/TouchGFX/gui/containers/subdir.mk
 -include Application/User/TouchGFX/gui/common/subdir.mk
 -include Application/User/TouchGFX/generated/texts/subdir.mk
 -include Application/User/TouchGFX/generated/images/__designer/subdir.mk
 -include Application/User/TouchGFX/generated/images/subdir.mk
 -include Application/User/TouchGFX/generated/gui_generated/screen2_screen/subdir.mk
 -include Application/User/TouchGFX/generated/gui_generated/screen1_screen/subdir.mk
+-include Application/User/TouchGFX/generated/gui_generated/containers/subdir.mk
 -include Application/User/TouchGFX/generated/gui_generated/common/subdir.mk
 -include Application/User/TouchGFX/generated/fonts/subdir.mk
 -include Application/User/subdir.mk

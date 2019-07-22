@@ -7,10 +7,15 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/containers/Slider.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/RadioButton.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
+#include <gui/containers/Numpad.hpp>
+#include <touchgfx/widgets/RadioButtonGroup.hpp>
+#include <touchgfx/mixins/Draggable.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -28,10 +33,14 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::ScalableImage scalableImage1;
+    touchgfx::Box box1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::Slider slider1;
     touchgfx::Button button1;
+    touchgfx::RadioButton radioButton1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > > flexButton1;
+    touchgfx::Draggable< Numpad > numpad1;
+    touchgfx::RadioButtonGroup<1> radioButtonGroup;
 
 private:
 
@@ -39,11 +48,13 @@ private:
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
     /*
      * Callback Declarations
      */
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
 };
 
