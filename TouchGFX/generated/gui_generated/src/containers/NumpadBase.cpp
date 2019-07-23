@@ -87,7 +87,7 @@ NumpadBase::NumpadBase()
     numpad3.setTextColors(touchgfx::Color::getColorFrom24BitRGB(10, 10, 10), touchgfx::Color::getColorFrom24BitRGB(10, 10, 10));
     numpad3.setPosition(230, 289, 120, 87);
 
-    NumpadValue.setXY(36, 34);
+    NumpadValue.setXY(35, 34);
     NumpadValue.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     NumpadValue.setLinespacing(0);
     Unicode::snprintf(NumpadValueBuffer, NUMPADVALUE_SIZE, "%s", TypedText(T_SINGLEUSEID22).getText());

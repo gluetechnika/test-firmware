@@ -961,9 +961,9 @@
               "BufferSize": 10
             },
             "Name": "NumpadValue",
-            "X": 36,
+            "X": 35,
             "Y": 34,
-            "Width": 35,
+            "Width": 280,
             "Height": 67,
             "Type": "TextArea",
             "Visible": true,

@@ -1,2 +1,15 @@
 Converting images
-Linking build/bin/simulator.exe
+Compiling gui/src/containers/Numpad.cpp
+gui/src/containers/Numpad.cpp: In member function 'void Numpad::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)':
+gui/src/containers/Numpad.cpp:30:2: error: 'old_value' was not declared in this scope
+  old_value = entered_value;
+  ^~~~~~~~~
+gui/src/containers/Numpad.cpp:30:14: error: 'entered_value' was not declared in this scope
+  old_value = entered_value;
+              ^~~~~~~~~~~~~
+simulator/gcc/Makefile:220: recipe for target 'build/MINGW32_NT-6.2/gui/src/containers/Numpad.o' failed
+make[2]: *** [build/MINGW32_NT-6.2/gui/src/containers/Numpad.o] Error 1
+simulator/gcc/Makefile:182: recipe for target 'generate_assets' failed
+make[1]: *** [generate_assets] Error 2
+simulator/gcc/Makefile:40: recipe for target 'all' failed
+make: *** [all] Error 2
