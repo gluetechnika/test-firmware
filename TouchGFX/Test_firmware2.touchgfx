@@ -208,6 +208,18 @@
               "ActionComponent": "Screen2",
               "Type": "ActionGotoScreen"
             }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "flexButton1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "triggerNumpad",
+              "Type": "ActionCustom"
+            }
           }
         ],
         "Name": "Screen1",

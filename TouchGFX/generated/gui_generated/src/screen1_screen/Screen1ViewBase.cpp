@@ -41,6 +41,7 @@ Screen1ViewBase::Screen1ViewBase() :
     flexButton1.setTextPosition(0, 12, 87, 50);
     flexButton1.setTextColors(touchgfx::Color::getColorFrom24BitRGB(10, 10, 10), touchgfx::Color::getColorFrom24BitRGB(10, 10, 10));
     flexButton1.setPosition(130, 282, 87, 50);
+    flexButton1.setAction(flexButtonCallback);
 
     numpad1.setXY(390, 78);
 
@@ -78,6 +79,9 @@ void Screen1ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCo
 {
     if (&src == &flexButton1)
     {
-
+        //Interaction2
+        //When flexButton1 clicked call virtual function
+        //Call triggerNumpad
+        triggerNumpad();
     }
 }

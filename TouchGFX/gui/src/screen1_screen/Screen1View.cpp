@@ -14,3 +14,7 @@ void Screen1View::tearDownScreen()
 {
     Screen1ViewBase::tearDownScreen();
 }
+
+void Screen1View::triggerNumpad() {
+    numpad1.removeAll();
+}
