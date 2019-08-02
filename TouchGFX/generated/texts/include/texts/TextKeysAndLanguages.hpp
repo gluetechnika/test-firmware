@@ -15,7 +15,6 @@ typedef enum
 typedef enum
 {
     T_SINGLEUSEID2,
-    T_SINGLEUSEID3,
     T_SINGLEUSEID4,
     T_SINGLEUSEID5,
     T_SINGLEUSEID6,

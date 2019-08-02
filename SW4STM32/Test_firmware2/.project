@@ -35,6 +35,16 @@
     <nature>org.eclipse.cdt.core.ccnature</nature>
     <nature>org.eclipse.cdt.core.ccnature</nature>
     <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
+    <nature>org.eclipse.cdt.core.ccnature</nature>
     <nature>org.eclipse.cdt.core.cnature</nature>
     <nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
     <nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
@@ -427,6 +437,11 @@
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/Stone-2430.cpp</locationURI>
     </link>
     <link>
+      <name>Application/User/TouchGFX/generated/images/black.cpp</name>
+      <type>1</type>
+      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/black.cpp</locationURI>
+    </link>
+    <link>
       <name>Application/User/TouchGFX/generated/images/domasz.cpp</name>
       <type>1</type>
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/domasz.cpp</locationURI>
@@ -440,6 +455,11 @@
       <name>Application/User/TouchGFX/generated/images/imageonline-co-darkenimage.cpp</name>
       <type>1</type>
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/imageonline-co-darkenimage.cpp</locationURI>
+    </link>
+    <link>
+      <name>Application/User/TouchGFX/generated/images/red.cpp</name>
+      <type>1</type>
+      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/red.cpp</locationURI>
     </link>
     <link>
       <name>Application/User/TouchGFX/generated/texts/LanguageGb.cpp</name>
@@ -512,6 +532,11 @@
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp</locationURI>
     </link>
     <link>
+      <name>Application/User/TouchGFX/generated/images/__designer/blue_backgrounds_main_bg_texture_480x272px.cpp</name>
+      <type>1</type>
+      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_backgrounds_main_bg_texture_480x272px.cpp</locationURI>
+    </link>
+    <link>
       <name>Application/User/TouchGFX/generated/images/__designer/blue_buttons_round_edge_small.cpp</name>
       <type>1</type>
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_buttons_round_edge_small.cpp</locationURI>
@@ -520,31 +545,6 @@
       <name>Application/User/TouchGFX/generated/images/__designer/blue_buttons_round_edge_small_pressed.cpp</name>
       <type>1</type>
       <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_buttons_round_edge_small_pressed.cpp</locationURI>
-    </link>
-    <link>
-      <name>Application/User/TouchGFX/generated/images/__designer/blue_check_buttons_check_mark_active.cpp</name>
-      <type>1</type>
-      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_check_buttons_check_mark_active.cpp</locationURI>
-    </link>
-    <link>
-      <name>Application/User/TouchGFX/generated/images/__designer/blue_check_buttons_check_mark_inactive.cpp</name>
-      <type>1</type>
-      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_check_buttons_check_mark_inactive.cpp</locationURI>
-    </link>
-    <link>
-      <name>Application/User/TouchGFX/generated/images/__designer/blue_check_buttons_check_mark_normal.cpp</name>
-      <type>1</type>
-      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_check_buttons_check_mark_normal.cpp</locationURI>
-    </link>
-    <link>
-      <name>Application/User/TouchGFX/generated/images/__designer/blue_check_buttons_check_mark_pressed.cpp</name>
-      <type>1</type>
-      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_check_buttons_check_mark_pressed.cpp</locationURI>
-    </link>
-    <link>
-      <name>Application/User/TouchGFX/generated/images/__designer/blue_progressindicators_bg_medium_text_progress_bg_square.cpp</name>
-      <type>1</type>
-      <locationURI>PARENT-2-PROJECT_LOC/TouchGFX/generated/images/src/__designer/blue_progressindicators_bg_medium_text_progress_bg_square.cpp</locationURI>
     </link>
     <link>
       <name>Application/User/TouchGFX/generated/images/__designer/blue_slider_horizontal_large_indicators_slider_round_nob.cpp</name>

@@ -7,9 +7,8 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
-#include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/containers/progress_indicators/TextProgress.hpp>
 #include <touchgfx/containers/Container.hpp>
 
 class Screen2ViewBase : public touchgfx::View<Screen2Presenter>
@@ -28,9 +27,8 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Box box1;
+    touchgfx::ScalableImage scalableImage1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
-    touchgfx::TextProgress textProgress1;
     touchgfx::Container container1;
 
 

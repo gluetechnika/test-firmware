@@ -4,18 +4,175 @@
       {
         "Components": [
           {
-            "Color": {
-              "Red": 0,
-              "Green": 9,
-              "Blue": 46
-            },
+            "Filename": "__designer\\blue_backgrounds_main_bg_texture_480x272px.png",
             "Alpha": 255,
-            "Name": "box1",
+            "ScalingAlgorithm": "Bilinear Interpolation",
+            "Style": "Image5",
+            "Name": "scalableImage1",
             "X": 0,
             "Y": 0,
             "Width": 1024,
             "Height": 600,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 38,
+            "Y": 52,
+            "Width": 135,
+            "Height": 160,
             "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1_2",
+            "X": 38,
+            "Y": 212,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1_1",
+            "X": 173,
+            "Y": 52,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1_3",
+            "X": 173,
+            "Y": 212,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1_4",
+            "X": 38,
+            "Y": 369,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1_5",
+            "X": 173,
+            "Y": 369,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 0,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1_5_1",
+            "X": 308,
+            "Y": 52,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__designer\\blue_slider_horizontal_large_slider_round_back.png",
+            "BackgroundSelected": "__designer\\blue_slider_horizontal_large_slider_round_fill.png",
+            "Indicator": "__designer\\blue_slider_horizontal_large_indicators_slider_round_nob.png",
+            "BackgroundX": 2,
+            "BackgroundY": 22,
+            "IndicatorPos": 0,
+            "IndicatorMax": 621,
+            "IndicatorMin": 0,
+            "ValueMax": 100,
+            "ValueMin": 0,
+            "InitValue": 0,
+            "Style": "Style1",
+            "Name": "slider1",
+            "X": 314,
+            "Y": 228,
+            "Width": 680,
+            "Height": 58,
+            "Type": "Slider",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -52,63 +209,16 @@
             "Moveable": false
           },
           {
-            "IsHorizontalSlider": true,
-            "BackgroundUnselected": "__designer\\blue_slider_horizontal_large_slider_round_back.png",
-            "BackgroundSelected": "__designer\\blue_slider_horizontal_large_slider_round_fill.png",
-            "Indicator": "__designer\\blue_slider_horizontal_large_indicators_slider_round_nob.png",
-            "BackgroundX": 2,
-            "BackgroundY": 22,
-            "IndicatorPos": 0,
-            "IndicatorMax": 621,
-            "IndicatorMin": 0,
-            "ValueMax": 100,
-            "ValueMin": 0,
-            "InitValue": 0,
-            "Style": "Style1",
-            "Name": "slider1",
-            "X": 190,
-            "Y": 169,
-            "Width": 680,
-            "Height": 58,
-            "Type": "Slider",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
             "Released": "__designer\\blue_buttons_round_edge_small.png",
             "Alpha": 255,
             "Style": "Style4",
             "Name": "button1",
-            "X": 47,
-            "Y": 412,
+            "X": 772,
+            "Y": 329,
             "Width": 170,
             "Height": 60,
             "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\blue_check_buttons_check_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\blue_check_buttons_check_mark_normal.png",
-            "FileNameUnselected": "__designer\\blue_check_buttons_check_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\blue_check_buttons_check_mark_pressed.png",
-            "Style": "Style4",
-            "Name": "radioButton1",
-            "X": 77,
-            "Y": 176,
-            "Width": 44,
-            "Height": 44,
-            "Type": "RadioButton",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -169,8 +279,8 @@
               }
             ],
             "Name": "flexButton1",
-            "X": 130,
-            "Y": 282,
+            "X": 402,
+            "Y": 435,
             "Width": 87,
             "Height": 50,
             "Type": "FlexButton",
@@ -183,13 +293,32 @@
           {
             "CustomContainerDefinitionName": "Numpad",
             "Name": "numpad1",
-            "X": 390,
-            "Y": 78,
+            "X": 465,
+            "Y": 71,
             "Width": 350,
             "Height": 458,
             "Type": "CustomContainerInstance",
             "Visible": true,
             "Draggable": true,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1_5_2",
+            "X": 308,
+            "Y": 212,
+            "Width": 135,
+            "Height": 160,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
@@ -204,7 +333,8 @@
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2",
               "Type": "ActionGotoScreen"
             }
@@ -229,18 +359,16 @@
       {
         "Components": [
           {
-            "Color": {
-              "Red": 178,
-              "Green": 17,
-              "Blue": 17
-            },
+            "Filename": "__designer\\blue_backgrounds_main_bg_texture_480x272px.png",
             "Alpha": 255,
-            "Name": "box1",
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Style": "Image5",
+            "Name": "scalableImage1",
             "X": 0,
             "Y": 0,
             "Width": 1024,
             "Height": 600,
-            "Type": "Box",
+            "Type": "ScalableImage",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -277,38 +405,6 @@
             "Moveable": false
           },
           {
-            "NumberOfDecimals": 0,
-            "TextId": "SingleUseId3",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "Style": "Style3",
-            "FileNameBackground": "__designer\\blue_progressindicators_bg_medium_text_progress_bg_square.png",
-            "IndicatorPositionX": 0,
-            "IndicatorPositionY": 0,
-            "IndicatorPositionWidth": 84,
-            "IndicatorPositionHeight": 34,
-            "ProgressRangeMin": 0,
-            "ProgressRangeMax": 100,
-            "ProgressRangeSteps": 0,
-            "ProgressRangeStepsMin": 0,
-            "ProgressInitialValue": 60,
-            "Name": "textProgress1",
-            "X": 233,
-            "Y": 310,
-            "Width": 84,
-            "Height": 34,
-            "Type": "TextProgress",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Components": [],
             "Name": "container1",
             "X": 365,
@@ -332,7 +428,8 @@
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen1",
               "Type": "ActionGotoScreen"
             }
@@ -1197,10 +1294,6 @@
     "TextEntries": [
       {
         "TextEntryId": "SingleUseId2",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId3",
         "IsResource": false
       },
       {
